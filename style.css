@@ -1,24 +1,46 @@
 * {
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
 }
 
+#pageWrapper {
+    display: flex;
+}
+
 #container {
+    flex: 3;
     border: 50px solid maroon;
     border-radius: 20px;
     width: 500px;
     height: 500px;
-    margin: 0 auto;
     display: grid;
     justify-items: stretch;
     align-items: stretch;
     overflow: hidden;
-    margin-top: 20px;
-    
+    margin: 20px 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box {
-    border: 0.25px solid black;  
+    border: 1px solid lightgray;
 }
 
+nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 20px;
+    justify-content: center;
+}
 
+button {
+    flex: 1;
+    margin: 5px;
+    border-radius: 20px;
+    background: aliceblue;
+    box-shadow: 3px 3px 3px grey;
+    font-size: 1em;
+}
+
+/* Add media query for screens less than 600px with flex to column for page wrapper*/
