@@ -31,14 +31,13 @@
         
        function removeGrid() {
            let boxGrid = document.querySelectorAll('.box')
-           
+           for(let i = 0; i < boxGrid.length; i++) {
+                container.removeChild(boxGrid[i])
+           }
        }
-       
 
-    //    function setRowCols(rows, cols) {
-    //        container.style.gridTemplateRows = `repeat(${rows}, 1fr)`
-    //        container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
-    //    }
+       createGrid(16, 16)
+       
        
     </script>
 </body>
