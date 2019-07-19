@@ -13,11 +13,12 @@
     justify-items: stretch;
     align-items: stretch;
     overflow: hidden;
+    margin-top: 20px;
     
 }
 
 .box {
-    border: 1px solid black;  
+    border: 0.25px solid black;  
 }
 
 

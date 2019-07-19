@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Etch-A-Sketch: by Michaela</title>
     <style>
-      
+
     </style>
 </head>
+
 <body>
     <div id="container">
     </div>
-    
-    <script>
-       let container = document.querySelector('#container')
-    
-       function createGrid(rows, cols) {
-           for(let i = 0; i < rows; i++) {
-           for(let j = 0; j < cols; j++){
-               let div = document.createElement('div')
-               div.classList.add('box')
-               container.appendChild(div)
-               container.style.gridTemplateRows = `repeat(${rows}, 1fr)`
-               container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
-           }
-       }
-       } 
-        
-       function removeGrid() {
-           let boxGrid = document.querySelectorAll('.box')
-           for(let i = 0; i < boxGrid.length; i++) {
-                container.removeChild(boxGrid[i])
-           }
-       }
 
-       createGrid(16, 16)
-       
-       
+    <script src="script.js">
+        
     </script>
 </body>
+
 </html>
