@@ -22,8 +22,14 @@ function removeGrid() {
 function drawBW() {
     let boxes = document.querySelectorAll('.box')
     boxes.forEach(div => div.addEventListener('mouseover', function (e) {
-        e.target.style.background = 'black'
+    e.target.style.background = 'black'
     }))
+}
+
+function removeColor() {
+    let boxes = document.querySelectorAll('.box')
+    boxes.forEach(div => div.style.background = 'white')
+
 }
 
 let newGridBtn = document.querySelector('#newGrid') 
@@ -38,6 +44,9 @@ newGridBtn.addEventListener('click', () => {
     createGrid(input, input)
     drawBW()
 })
+
+let resetBtn = document.querySelector('#reset')
+resetBtn.addEventListener('click', removeColor)
 
 createGrid(16, 16)
 drawBW()
