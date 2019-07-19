@@ -16,37 +16,30 @@
     
     <script>
        let container = document.querySelector('#container')
-    //    let conStyle = getComputedStyle(container)
-    //    let conWidth = conStyle.width
-
-    //    function createGrid(cols, rows) {
-    //        for(let i = 0; i < cols; i++){
-    //            for(let j = 0; j < rows; j++) {
-    //             let conStyle = getComputedStyle(container)
-    //             let conWidth = conStyle.width
-    //                let div = document.createElement('div')
-    //                div.classList.add('box')
-    //                div.style.width = conWidth/rows
-    //                div.style.height = conWidth/rows
-    //                container.appendChild(div)
-    //            }
-    //        }
-    //    }
     
-        
-       for(let i = 0; i < 4; i++) {
-           for(let j = 0; j < 4; j++){
-            let conStyle = getComputedStyle(container)
-            let conWidth = conStyle.width
+       function createGrid(rows, cols) {
+           for(let i = 0; i < rows; i++) {
+           for(let j = 0; j < cols; j++){
                let div = document.createElement('div')
                div.classList.add('box')
-               div.style.width = "25"
-               div.style.height = "25%"
-               div.textContent = i
                container.appendChild(div)
+               container.style.gridTemplateRows = `repeat(${rows}, 1fr)`
+               container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
            }
        }
-    
+       } 
+        
+       function removeGrid() {
+           let boxGrid = document.querySelectorAll('.box')
+           
+       }
+       
+
+    //    function setRowCols(rows, cols) {
+    //        container.style.gridTemplateRows = `repeat(${rows}, 1fr)`
+    //        container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
+    //    }
+       
     </script>
 </body>
 </html>

@@ -2,23 +2,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 #container {
-    border: 75px solid maroon;
-    border-radius: 12px;
+    border: 50px solid maroon;
+    border-radius: 20px;
     width: 500px;
     height: 500px;
     margin: 0 auto;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    overflow: hidden;
     
 }
 
 .box {
-    border: 1px solid black;
-    display: inline-block;
+    border: 1px solid black;  
 }
-
-/* .box:after {
-    content: "";
-    float: left;
-    display: block; 
-    padding: 100%;
-} */
