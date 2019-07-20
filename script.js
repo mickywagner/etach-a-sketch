@@ -104,6 +104,6 @@ function shadeIn(e) {
 }
 
 
-
 createGrid(16, 16)
 removeColor()
+draw()

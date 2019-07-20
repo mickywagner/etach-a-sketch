@@ -51,7 +51,7 @@ button {
     min-height: 70px;
     min-width: 100px;
     border-radius: 20px;
-    background: aliceblue;
+    background: lightgoldenrodyellow;
     box-shadow: 3px 3px 3px grey;
     font-size: 1em;
     padding: 5px;
@@ -65,7 +65,7 @@ input {
     border: none;
     width: 90%;
     height: 40px;
-    background:aliceblue
+    background:lightgoldenrodyellow;
 }
 
 input:focus {
