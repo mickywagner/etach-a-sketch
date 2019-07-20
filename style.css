@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow&display=swap');
+
+
 * {
     margin: 0px;
     box-sizing: border-box;
 }
 
-#pageWrapper {
+body {
+    background: lightgray;
+}
+#wrapper {
     display: flex;
 }
 
@@ -22,7 +28,12 @@
 }
 
 .box {
-    border: none;
+    border: 1px dashed lightgray;
+    
+}
+
+.white {
+    background-color: rgb(255,255,255)
 }
 
 nav {
@@ -36,7 +47,7 @@ nav {
 
 button {
     flex: 1;
-    margin: 5px;
+    margin: 5px 5px 5px 20px;
     min-height: 70px;
     min-width: 100px;
     border-radius: 20px;
@@ -46,6 +57,10 @@ button {
     padding: 5px;
 }
 
+button:focus {
+    outline:0;
+}
+
 input {
     border: none;
     width: 90%;
@@ -53,4 +68,35 @@ input {
     background:aliceblue
 }
 
+input:focus {
+    outline: 0;
+}
+
+h1 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 3em;
+    color: black;
+    text-shadow: 2px 2px 2px gold;
+}
+
 /* Add media query for screens less than 600px with flex to column for page wrapper*/
+
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    #container {
+        margin: 0 auto;
+    }
+
+    button {
+        width: 400px;
+        margin: 10px auto;
+    }
+
+}
